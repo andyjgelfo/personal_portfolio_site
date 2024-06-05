@@ -2,3 +2,22 @@
     background-color: #FF9A69;
     height: 100vh;
 }
+
+#gelfoHeader {
+    font-size: 70px;
+    font-family: "Saira", serif;
+    font-weight: bold;
+    color: #FB5A32;
+    /* text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; */
+    -webkit-text-stroke-color: #040404;
+    -webkit-text-stroke-width: 3px;
+}
+
+#gelfoPicture {
+    height: 421px;
+    width: auto;
+}

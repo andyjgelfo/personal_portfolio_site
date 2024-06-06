@@ -1,22 +1,71 @@
 <div id="homeBody">
     <app-navbar></app-navbar>
 
-    <div id="homeMain" class="flex justify-center mt-24">
+    <div id="homeMain" class="flex justify-center mt-24 w-full">
 
         <!-- Section for "Andy Gelfo" and bullet points -->
-        <div class="mx-12">
+        <div class="w-[60%] pl-48">
+
+            <!-- Header -->
             <div id="gelfoHeader">
                 &lt; Andy Gelfo /&gt;
             </div>
 
-            <div class="tw">
-                
-            </div>
+            <!-- Bullet Points -->
+            <div class="tw gelfoPts"></div>
         </div>
 
         <!-- Section for Andy picture -->
-        <div class="mx-12">
-            <img src="../../assets/images/andy_portrait.png" alt="Picture of Andy Gelfo with a retro stylized border" id="gelfoPicture" />
+        <div class="w-[40%] pl-12">
+            <img src="../../assets/images/andy_portrait.png" alt="Picture of Andy Gelfo with a retro stylized border"
+                id="gelfoPicture" />
         </div>
+    </div>
+
+
+    <div id="homeMain" class="flex justify-center mt-24 w-full pb-24">
+
+        <div class="w-[60%] pl-48">
+
+            <!-- Header -->
+            <div id="gelfoHeader">
+                Versatile Developer
+            </div>
+
+
+            <!-- Bullet Points -->
+            <!-- <div class="tw2 gelfoPts"></div> -->
+            <div class="gelfoPts">
+                <div>-&gt; Front-End Specialization</div>
+                <div class="subGelfoPt ml-12">-&gt; React, Angular, React Native, Design Process with Figma</div>
+
+                <div class="mt-6">-&gt; Full-Stack Development</div>
+                <div class="subGelfoPt ml-12">-&gt; LAMP, MERN, PERN Stacks</div>
+
+                <div class="mt-6">-&gt; Traditional Programming</div>
+                <div class="subGelfoPt ml-12">-&gt; Java, C, C++, C#, JavaScript, etc.</div>
+
+            </div>
+
+        </div>
+
+        <!-- Section for Andy picture -->
+        <div class="w-[40%] pl-12">
+            <div class="">
+                <img src="../../assets/images/react_icon.png"
+                    alt="Picture of Andy Gelfo with a retro stylized border" id="reactPicture" 
+                />
+                <div class="threeDimensionalText pl-[2.2em]">React</div>
+            </div>
+
+            <div class="flex items-center flex-col">
+                <img src="../../assets/images/angular_icon.png"
+                    alt="Picture of Andy Gelfo with a retro stylized border" id="reactPicture" 
+                />
+                <div class="threeDimensionalText">Angular</div>
+            </div>
+        </div>
+
+
     </div>
 </div>

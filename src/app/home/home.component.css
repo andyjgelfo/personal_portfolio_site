@@ -136,3 +136,30 @@
   font-weight: bold;
   -webkit-backface-visibility: hidden; /* fixes flashing */
   }
+
+  .footerBase {
+    background-color: #332A29;
+    display: flex;
+    align-items: center;
+    padding: 0.8em;
+    height: 4rem;
+}
+
+
+.footerLinks {
+    font-family: "Recursive", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #C0C0C0;
+    margin-left: 0.6em;
+    margin-right: 0.7em;
+    transition: 0.2s ease;
+
+}
+
+.footerLinks:hover {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FB5A32;
+    cursor: pointer;
+}

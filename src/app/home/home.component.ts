@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 // @ts-ignore
 import Typewriter from 't-writer.js';

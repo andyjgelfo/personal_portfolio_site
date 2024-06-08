@@ -1,0 +1,176 @@
+#homeBody {
+    background-color: #FF9A69;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+
+}
+
+#gelfoHeader {
+    font-size: 70px;
+    font-family: "Saira", serif;
+    font-weight: bold;
+    color: #FB5A32;
+    /* text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; */
+    -webkit-text-stroke-color: #040404;
+    -webkit-text-stroke-width: 3px;
+}
+
+#gelfoPicture {
+    height: 26.3125em;
+    width: 29em;
+}
+
+#reactPicture {
+    height: 230px;
+    width: 230px;
+}
+
+
+#angularPicture {
+    height: 230px;
+    width: 230px;
+}
+
+#professionsPicture {
+    height: 391px;
+    width: 586px;
+}
+
+.iconPicture {
+    height: 263px;
+    width: 263px;
+    transition: 0.15s ease-in-out;
+}
+
+.iconPicture:hover {
+    /* height: 290px;
+    width: 290px; */
+    transform: scale(1.15);
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.gelfoPts {
+    font-family: "Recursive", sans-serif;
+    color: white !important;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    font-size: 40px;
+    white-space: pre;
+    font-weight: bold;
+    max-width: 100%;
+    text-wrap: wrap;
+}
+
+.subGelfoPt {
+    color: #d1cbcb !important;
+    font-size: 30px;
+    text-shadow: 
+    -1.75px -1.75px 0 #000,  
+    1.75px -1.75px 0 #000,
+    -1.75px 1.75px 0 #000,
+    1.75px 1.75px 0 #000;
+
+}
+
+.threeDimensionalText {
+    top: 50%; 
+    right: 50%;
+    /* transform: translate(50%,-50%); */
+    /* font-family: verdana; */
+    /* font-size: 12em; */
+    font-size: 32px;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 1px 1px #919191,
+        1px 1.5px 1px #919191,
+        1px 2px 1px #919191,
+        1px 2.5px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3.5px 1px #919191,
+        1px 4px 1px #919191,
+        1px 4.5px 1px #919191,
+        1px 5px 1px #919191,
+    1px 9px 3px rgba(16,16,16,0.4),
+    1px 11px 5px rgba(16,16,16,0.2),
+    1px 12.5px 17.5px rgba(16,16,16,0.2),
+    1px 15px 30px rgba(16,16,16,0.4);
+    transition: 0.2s ease;
+
+}
+
+.threeDimensionalText:hover {
+    transition: 0.2s ease;
+    color: #d1d1d1;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #616161,
+        1px 1px 1px #616161,
+        1px 1.5px 1px #616161,
+        1px 2px 1px #616161,
+        1px 2.5px 1px #616161,
+        1px 3px 1px #616161,
+        1px 3.5px 1px #616161,
+        1px 4px 1px #616161,
+        1px 4.5px 1px #616161,
+        1px 5px 1px #616161,
+    1px 9px 3px rgba(16,16,16,0.4),
+    1px 11px 5px rgba(16,16,16,0.2),
+    1px 12.5px 17.5px rgba(16,16,16,0.2),
+    1px 15px 30px rgba(16,16,16,0.4);
+}
+
+.flash {
+    display: inline-block;
+    text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+    transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+    color: hsla(0,0%,0%,0);
+  perspective: 80px;
+  outline: none;
+  font-size: 3em;
+  font-weight: bold;
+  -webkit-backface-visibility: hidden; /* fixes flashing */
+  }
+
+  .footerBase {
+    background-color: #332A29;
+    display: flex;
+    align-items: center;
+    padding: 0.8em;
+    height: 4rem;
+}
+
+
+.footerLinks {
+    font-family: "Recursive", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #C0C0C0;
+    margin-left: 0.6em;
+    margin-right: 0.7em;
+    transition: 0.2s ease;
+
+}
+
+.footerLinks:hover {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FB5A32;
+    cursor: pointer;
+}
+
+#mainBody {
+    scroll-behavior: smooth;
+  }
+
+.projectHeaderImg {
+    height: 8em;
+    width: auto;
+}

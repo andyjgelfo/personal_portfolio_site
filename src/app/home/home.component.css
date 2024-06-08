@@ -1,6 +1,8 @@
 #homeBody {
     background-color: #FF9A69;
     min-height: 100vh;
+    scroll-behavior: smooth;
+
 }
 
 #gelfoHeader {
@@ -163,3 +165,7 @@
     color: #FB5A32;
     cursor: pointer;
 }
+
+#mainBody {
+    scroll-behavior: smooth;
+  }

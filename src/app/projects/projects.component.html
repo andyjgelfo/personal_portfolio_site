@@ -11,7 +11,8 @@
         <div class="flex justify-center items-center">
 
             <!-- KnightroGrade Logo -->
-            <img class="projectHeaderImg mx-8" src="../../assets/images/Knightro_Logo_Final.png" alt="logo for KnightroGrade project" />
+            <img class="projectHeaderImg mx-8" src="../../assets/images/Knightro_Logo_Final.png"
+                alt="logo for KnightroGrade project" />
 
             <!-- Title -->
             <div id="gelfoHeader" class="text-center">
@@ -19,10 +20,105 @@
             </div>
 
             <!-- React Logo -->
-            <img class="projectHeaderImg mx-7" src="../../assets/images/react.png" alt="logo for KnightroGrade project" />
+            <img class="projectHeaderImg mx-7" src="../../assets/images/react_icon.png"
+                alt="logo for KnightroGrade project" />
 
 
         </div>
+
+        <div class="flex mt-14">
+
+
+
+
+            <div class="gelfoPts w-[50%] pl-24">
+                <div>
+                    <button class="btn btn-primary" type="button" (click)="kgIsCollapsed1 = !kgIsCollapsed1"
+                        [attr.aria-expanded]="!kgIsCollapsed1" aria-controls="collapseExample">
+                        -&gt;
+                    </button> Senior Design Project in React
+                </div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed1" class="subProjectPt ml-12">-&gt;
+                    KnightroGrade was my Senior Design Project at UCF, utilizing a PERN Stack with Postgres, Express,
+                    React, and Node. I primarily worked on the front-end team with React.</div>
+
+                <div class="mt-6">
+                    <button class="btn btn-primary" type="button" (click)="kgIsCollapsed2 = !kgIsCollapsed2"
+                        [attr.aria-expanded]="!kgIsCollapsed2" aria-controls="collapseExample">
+                        -&gt;
+                    </button>
+                    Code Submission & Grading System for UCF
+                </div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed2" class=" subProjectPt ml-12">-&gt; Our
+                    project revolved around creating an automatic code grading system for UCF. Students would submit
+                    their programs to our website and have them automatically graded with test cases set by the
+                    professor, saving tedium and time for the TAs.</div>
+
+                <div class="mt-6"><button class="btn btn-primary" type="button"
+                        (click)="kgIsCollapsed3 = !kgIsCollapsed3" [attr.aria-expanded]="!kgIsCollapsed3"
+                        aria-controls="collapseExample">-&gt;</button> Front-End Manager & Figma Designer</div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed3" class="subProjectPt ml-12">-&gt; In this
+                    project, I took on the role of front-end manager, creating
+                    the schedules and leading the design process of our website. Initial designs were crafted and
+                    refined with Figma, until we finally made them a reality with React and BootStrap.</div>
+
+            </div>
+
+            <div class="w-[50%] ">
+                <div class="flex justify-center demoScreenshots">
+                    <div (click)="kgShowVideo = true; kgShowCarousel = false;" class="mx-8" [ngClass]="{'selectedDSOption': kgShowVideo === true}">Demo Video</div>
+                    <div (click)="kgShowVideo = false; kgShowCarousel = true;" class="mx-8" [ngClass]="{'selectedDSOption': kgShowCarousel === true}">Screenshots</div>
+                </div>
+
+                <div *ngIf="kgShowVideo" class="pt-8 flex justify-center">
+                    <iframe width="840" height="472.5" src="https://www.youtube.com/embed/Iw2rcweqeJo?si=m5EqZim4xfHvk1GT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div *ngIf="kgShowCarousel" class="pt-8">
+                    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true">
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/kg_homepage.png" alt="KnightroGrade homepage" class="kgCarousel1" />
+                            </div>
+                            <!-- <div class="carousel-caption">
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/kg_courses.png" alt="Random second slide" class="kgCarousel1" />
+                            </div>
+                            <!-- <div class="carousel-caption">
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/kg_ide.png" alt="Random third slide" class="kgCarousel1" />
+                            </div>
+                            <!-- <div class="carousel-caption">
+                                <h3>Third slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div> -->
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
 
 
 

@@ -58,25 +58,21 @@
     font-family: "Recursive", sans-serif;
     color: white !important;
     text-shadow: 
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
-    font-size: 40px;
+    -1.75px -1.75px 0 #000,  
+    1.75px -1.75px 0 #000,
+    -1.75px 1.75px 0 #000,
+    1.75px 1.75px 0 #000;
+    font-size: 36px;
     white-space: pre;
     font-weight: bold;
     max-width: 100%;
     text-wrap: wrap;
 }
 
-.subGelfoPt {
-    color: #d1cbcb !important;
-    font-size: 30px;
-    text-shadow: 
-    -1.75px -1.75px 0 #000,  
-    1.75px -1.75px 0 #000,
-    -1.75px 1.75px 0 #000,
-    1.75px 1.75px 0 #000;
+.subProjectPt {
+    color: #0f0f0f !important;
+    font-size: 24px;
+    text-shadow: none;
 
 }
 
@@ -127,26 +123,6 @@
     1px 15px 30px rgba(16,16,16,0.4);
 }
 
-.flash {
-    display: inline-block;
-    text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
-    transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
-    color: hsla(0,0%,0%,0);
-  perspective: 80px;
-  outline: none;
-  font-size: 3em;
-  font-weight: bold;
-  -webkit-backface-visibility: hidden; /* fixes flashing */
-  }
-
-  .footerBase {
-    background-color: #332A29;
-    display: flex;
-    align-items: center;
-    padding: 0.8em;
-    height: 4rem;
-}
-
 
 .footerLinks {
     font-family: "Recursive", sans-serif;
@@ -173,4 +149,30 @@
 .projectHeaderImg {
     height: 8em;
     width: auto;
+}
+
+.collapse {
+    visibility: visible !important;
+}
+
+.demoScreenshots {
+    font-family: "Recursive", sans-serif;
+    font-size: 26px;
+    color: #c7310c;
+    font-weight: bold;
+}
+
+.selectedDSOption {
+    color: #992609;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.kgCarousel1 {
+    height: 548px;
+    width: auto;
+}
+
+.carousel-caption {
+    padding-top: 20px !important;
 }

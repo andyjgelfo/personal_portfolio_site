@@ -23,118 +23,65 @@
             <img class="projectHeaderImg mx-7" src="../../assets/images/react_icon.png"
                 alt="logo for KnightroGrade project" />
 
-
         </div>
 
+        <!-- Body -->
         <div class="flex mt-14">
 
-
-
-
+            <!-- Left: Bullet Points and Collapsing Info -->
             <div class="gelfoPts w-[50%] pl-24">
-                <div>
-                    <button class="btn btn-primary" type="button" (click)="kgIsCollapsed1 = !kgIsCollapsed1"
+
+                <!-- Point 1 -->
+                <div class="flex items-center">
+                    <div class="pr-3" type="button" (click)="kgIsCollapsed1 = !kgIsCollapsed1; kgRotate(1)"
                         [attr.aria-expanded]="!kgIsCollapsed1" aria-controls="collapseExample">
-                        -&gt;
-                    </button> Senior Design Project in React
+                        <img class="arrowImg" [@rotateAnimation]='kgRotateState1' src="../../assets/images/arrow.png" />
+                    </div> Senior Design Project in React
                 </div>
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed1" class="subProjectPt ml-12">-&gt;
-                    KnightroGrade was my Senior Design Project at UCF, utilizing a PERN Stack with Postgres, Express,
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed1" class="subProjectPt ml-12">KnightroGrade
+                    was my Senior Design Project at UCF, utilizing a PERN Stack with Postgres, Express,
                     React, and Node. I primarily worked on the front-end team with React.</div>
 
+                <!-- Point 2 -->
                 <div class="mt-6">
-                    <button class="btn btn-primary" type="button" (click)="kgIsCollapsed2 = !kgIsCollapsed2"
+                    <button class="pr-3" type="button" (click)="kgIsCollapsed2 = !kgIsCollapsed2; kgRotate(2)"
                         [attr.aria-expanded]="!kgIsCollapsed2" aria-controls="collapseExample">
-                        -&gt;
+                        <img class="arrowImg" [@rotateAnimation]='kgRotateState2' src="../../assets/images/arrow.png" />
                     </button>
                     Code Submission & Grading System for UCF
                 </div>
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed2" class=" subProjectPt ml-12">-&gt; Our
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed2" class=" subProjectPt ml-12">Our
                     project revolved around creating an automatic code grading system for UCF. Students would submit
                     their programs to our website and have them automatically graded with test cases set by the
                     professor, saving tedium and time for the TAs.</div>
 
-                <div class="mt-6"><button class="btn btn-primary" type="button"
-                        (click)="kgIsCollapsed3 = !kgIsCollapsed3" [attr.aria-expanded]="!kgIsCollapsed3"
-                        aria-controls="collapseExample">-&gt;</button> Front-End Manager & Figma Designer</div>
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed3" class="subProjectPt ml-12">-&gt; In this
+                <!-- Point 3 -->
+                <div class="mt-6"><button class="pr-3" type="button"
+                        (click)="kgIsCollapsed3 = !kgIsCollapsed3; kgRotate(3)" [attr.aria-expanded]="!kgIsCollapsed1"
+                        aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='kgRotateState3' src="../../assets/images/arrow.png" />
+                    </button> Front-End Manager & Figma Designer</div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed3" class="subProjectPt ml-12">In this
                     project, I took on the role of front-end manager, creating
                     the schedules and leading the design process of our website. Initial designs were crafted and
                     refined with Figma, until we finally made them a reality with React and BootStrap.</div>
-
             </div>
 
 
+            <!-- Right: Demo Video & Screenshot Carousel -->
             <div class="w-[50%] ">
 
-
-                <!-- <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-                    <li [ngbNavItem]="1">
-                        <button ngbNavLink>One</button>
-                        <ng-template ngbNavContent>
-                            <div class="pt-8 flex justify-center">
-                                <iframe width="840" height="472.5" src="https://www.youtube.com/embed/Iw2rcweqeJo?si=m5EqZim4xfHvk1GT"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                </iframe>
-                            </div>
-                        </ng-template>
-                    </li>
-                    <li [ngbNavItem]="2">
-                        <button ngbNavLink>Two</button>
-                        <ng-template ngbNavContent>
-                            <div *ngIf="kgShowCarousel" class="pt-8">
-                                <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
-                                    <ng-template ngbSlide>
-                                        <div class="picsum-img-wrapper flex justify-center">
-                                            <img src="../../assets/images/kg_homepage.png" alt="KnightroGrade homepage" class="kgCarousel1" />
-                                        </div>
-                                        <div class="flex flex-col items-center pt-6">
-                                            <h3>Homepage</h3>
-                                            <-- <p>Featuring </p> 
-                                        </div>
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <div class="picsum-img-wrapper flex justify-center">
-                                            <img src="../../assets/images/kg_courses.png" alt="Random second slide" class="kgCarousel1" />
-                                        </div>
-                                        <-- <div class="carousel-caption">
-                                            <h3>Second slide label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        </div> --
-                                        <div class="flex flex-col items-center pt-6">
-                                            <h3>Courses Page</h3>
-                                            <!-- <p>Featuring </p> --
-                                        </div>
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <div class="picsum-img-wrapper flex justify-center">
-                                            <img src="../../assets/images/kg_ide.png" alt="Random third slide" class="kgCarousel1" />
-                                        </div>
-                                        <div class="flex flex-col items-center pt-6">
-                                            <h3>Assignment IDE Page</h3>
-                                            <!-- <p>Featuring </p> --
-                                        </div>
-                                        <!-- <div class="carousel-caption"
-                                            <h3>Third slide label</h3>
-                                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                        </div> --
-                                    </ng-template>
-                                </ngb-carousel>
-                            </div>
-                        </ng-template>
-                    </li>
-                   
-                </ul> -->
-
-                <!-- <br><br><Br><br> -->
-
+                <!-- Options to switch between -->
                 <div class="flex justify-center">
-                    <div (click)="kgShowVideo = true; kgShowCarousel = false;" class="mx-8 hover-underline-animation" [ngClass]="{'selectedDSOption hover-underline-animation2': kgShowVideo === true, 'demoScreenshots': kgShowVideo == false}">Demo Video</div>
-                    <div (click)="kgShowVideo = false; kgShowCarousel = true;" class="mx-8 hover-underline-animation" [ngClass]="{'selectedDSOption hover-underline-animation2': kgShowCarousel === true, 'demoScreenshots': kgShowCarousel == false}">Screenshots</div>
+                    <div (click)="kgShowVideo = true; kgShowCarousel = false;" class="mx-8 hover-underline-animation"
+                        [ngClass]="{'selectedDSOption hover-underline-animation2': kgShowVideo === true, 'demoScreenshots': kgShowVideo == false}">
+                        Demo Video</div>
+                    <div (click)="kgShowVideo = false; kgShowCarousel = true;" class="mx-8 hover-underline-animation"
+                        [ngClass]="{'selectedDSOption hover-underline-animation2': kgShowCarousel === true, 'demoScreenshots': kgShowCarousel == false}">
+                        Screenshots</div>
                 </div>
 
+                <!-- Demo Video -->
                 <div *ngIf="kgShowVideo" class="pt-8 flex justify-center kgContent" [@inOutAnimation]>
                     <iframe width="672" height="378" src="https://www.youtube.com/embed/Iw2rcweqeJo?si=m5EqZim4xfHvk1GT"
                         title="YouTube video player" frameborder="0"
@@ -143,11 +90,13 @@
                     </iframe>
                 </div>
 
+                <!-- Screenshot Carousel -->
                 <div *ngIf="kgShowCarousel" class="pt-8 kgContent" [@inOutAnimation]>
                     <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
                         <ng-template ngbSlide>
                             <div class="picsum-img-wrapper flex justify-center">
-                                <img src="../../assets/images/kg_homepage.png" alt="KnightroGrade homepage" class="kgCarousel1" />
+                                <img src="../../assets/images/kg_homepage.png" alt="KnightroGrade homepage"
+                                    class="kgCarousel1" />
                             </div>
                             <div class="flex flex-col items-center pt-6">
                                 <!-- <p>Featuring </p> -->
@@ -155,7 +104,8 @@
                         </ng-template>
                         <ng-template ngbSlide>
                             <div class="picsum-img-wrapper flex justify-center">
-                                <img src="../../assets/images/kg_courses.png" alt="Random second slide" class="kgCarousel1" />
+                                <img src="../../assets/images/kg_courses.png" alt="Random second slide"
+                                    class="kgCarousel1" />
                             </div>
                             <!-- <div class="carousel-caption">
                                 <h3>Second slide label</h3>
@@ -167,7 +117,8 @@
                         </ng-template>
                         <ng-template ngbSlide>
                             <div class="picsum-img-wrapper flex justify-center">
-                                <img src="../../assets/images/kg_ide.png" alt="Random third slide" class="kgCarousel1" />
+                                <img src="../../assets/images/kg_ide.png" alt="Random third slide"
+                                    class="kgCarousel1" />
                             </div>
                             <div class="flex flex-col items-center pt-6">
                                 <!-- <p>Featuring </p> -->
@@ -179,21 +130,143 @@
                         </ng-template>
                     </ngb-carousel>
                 </div>
-
-
-
             </div>
+        </div>
+    </div>
+
+
+    <!-- CerealBoxd Section -->
+    <div id="homeMain" class="mt-12 w-full pb-24">
+
+        <!-- Header -->
+        <div class="flex justify-center items-center">
+
+            <!-- CerealBoxd Logo -->
+            <img class="projectHeaderImg ml-8 mr-1" src="../../assets/images/cerealboxd_logo.png"
+                alt="logo for CerealBoxd project" />
+
+            <!-- Title -->
+            <div id="gelfoHeader" class="text-center">
+                CerealBoxd
+            </div>
+
+            <!-- React Logo -->
+            <img class="projectHeaderImg mx-7" src="../../assets/images/react_icon.png"
+                alt="React logo icon" />
 
         </div>
 
+        <!-- Body -->
+        <div class="flex mt-14">
+
+            <!-- Left: Bullet Points and Collapsing Info -->
+            <div class="gelfoPts w-[50%] pl-24">
+
+                <!-- Point 1 -->
+                <div class="flex items-center">
+                    <div class="pr-3" type="button" (click)="kgIsCollapsed1 = !kgIsCollapsed1; kgRotate(1)"
+                        [attr.aria-expanded]="!kgIsCollapsed1" aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='kgRotateState1' src="../../assets/images/arrow.png" />
+                    </div> Cross-Platform Web & Mobile App
+                </div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed1" class="subProjectPt ml-12">CerealBoxd is a breakfast-themed twist on LetterBoxd, a popular movie-rating social platform. We created this social application to be cross-platform with React and React Native.</div>
+
+                <!-- Point 2 -->
+                <div class="mt-6">
+                    <button class="pr-3" type="button" (click)="kgIsCollapsed2 = !kgIsCollapsed2; kgRotate(2)"
+                        [attr.aria-expanded]="!kgIsCollapsed2" aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='kgRotateState2' src="../../assets/images/arrow.png" />
+                    </button>
+                    MERN Stack Project
+                </div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed2" class=" subProjectPt ml-12">CerealBoxd was done with a MERN Stack - MongoDB, Express, React, and Node. I was present throughout all teams on this project, primarily focusing on Mobile Front-End.</div>
+
+                <!-- Point 3 -->
+                <!-- <div class="mt-6"><button class="pr-3" type="button"
+                        (click)="kgIsCollapsed3 = !kgIsCollapsed3; kgRotate(3)" [attr.aria-expanded]="!kgIsCollapsed1"
+                        aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='kgRotateState3' src="../../assets/images/arrow.png" />
+                    </button> Front-End Manager & Figma Designer</div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed3" class="subProjectPt ml-12">In this
+                    project, I took on the role of front-end manager, creating
+                    the schedules and leading the design process of our website. Initial designs were crafted and
+                    refined with Figma, until we finally made them a reality with React and BootStrap.</div> -->
+            </div>
 
 
+            <!-- Right: Demo Video & Screenshot Carousel -->
+            <div class="w-[50%] ">
 
+                <!-- Options to switch between -->
+                <div class="flex justify-center">
+                    <div (click)="cbShowVideoWeb = true; cbShowVideoMobile = false; cbShowCarousel = false" class="mx-8 hover-underline-animation"
+                        [ngClass]="{'selectedDSOption hover-underline-animation2': cbShowVideoWeb === true, 'demoScreenshots': cbShowVideoWeb == false}">
+                        Demo Video (Web)</div>
+                    <div (click)="cbShowVideoMobile = true; cbShowVideoWeb = false; cbShowCarousel = false" class="mx-8 hover-underline-animation"
+                        [ngClass]="{'selectedDSOption hover-underline-animation2': cbShowVideoMobile === true, 'demoScreenshots':  cbShowVideoMobile == false}">
+                        Demo Video (Mobile)</div>
+                </div>
 
+                <!-- Demo Video (Web) -->
+                <div *ngIf="cbShowVideoWeb" class="pt-8 flex justify-center kgContent" [@inOutAnimation]>
+                    <iframe width="672" height="378" src="https://www.youtube.com/embed/txgYjM-E2rE?si=ydRCVlUH1ZyU6q0W" 
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
 
+                <!-- Demo Video (Mobile) -->
+                <div *ngIf="cbShowVideoMobile" class="pt-8 flex justify-center kgContent" [@inOutAnimation]>
+                    <iframe width="672" height="378" src="https://www.youtube.com/embed/kq0WzmcJL2I?si=BKzpTslkHneALSAY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
 
-
-
+                <!-- Screenshot Carousel -->
+                <div *ngIf="kgShowCarousel" class="pt-8 kgContent" [@inOutAnimation]>
+                    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/kg_homepage.png" alt="KnightroGrade homepage"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center pt-6">
+                                <!-- <p>Featuring </p> -->
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/kg_courses.png" alt="Random second slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <!-- <div class="carousel-caption">
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div> -->
+                            <div class="flex flex-col items-center pt-6">
+                                <!-- <p>Featuring </p> -->
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/kg_ide.png" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center pt-6">
+                                <!-- <p>Featuring </p> -->
+                            </div>
+                            <!-- <div class="carousel-caption">
+                                <h3>Third slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div> -->
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
     </div>
 
 

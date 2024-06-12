@@ -246,3 +246,8 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .arrowImg {
+    height: 16px;
+    width: auto;
+  }

@@ -6,7 +6,7 @@
 }
 
 #gelfoHeader {
-    font-size: 70px;
+    font-size: 56px;
     font-family: "Saira", serif;
     font-weight: bold;
     color: #FB5A32;
@@ -58,11 +58,11 @@
     font-family: "Recursive", sans-serif;
     color: white !important;
     text-shadow: 
-    -1.75px -1.75px 0 #000,  
-    1.75px -1.75px 0 #000,
-    -1.75px 1.75px 0 #000,
-    1.75px 1.75px 0 #000;
-    font-size: 36px;
+    -1.4px -1.4px 0 #000,  
+    1.4px -1.4px 0 #000,
+    -1.4px 1.4px 0 #000,
+    1.4px 1.4px 0 #000;
+    font-size: 28.8px;
     white-space: pre;
     font-weight: bold;
     max-width: 100%;
@@ -71,7 +71,7 @@
 
 .subProjectPt {
     color: #0f0f0f !important;
-    font-size: 24px;
+    font-size: 19.2px;
     text-shadow: none;
 
 }
@@ -147,7 +147,7 @@
   }
 
 .projectHeaderImg {
-    height: 8em;
+    height: 6.4em;
     width: auto;
 }
 
@@ -157,22 +157,92 @@
 
 .demoScreenshots {
     font-family: "Recursive", sans-serif;
-    font-size: 26px;
+    font-size: 20.8px;
     color: #c7310c;
     font-weight: bold;
+    transition: 0.2s ease;
+
+}
+
+.demoScreenshots:hover {
+    font-family: "Recursive", sans-serif;
+    font-size: 20.8px;
+    color: #992609;
+    font-weight: 800;
+    transition: 0.2s ease;
+    cursor: pointer;
+
 }
 
 .selectedDSOption {
+    font-family: "Recursive", sans-serif;
+    font-size: 20.8px;
     color: #992609;
     font-weight: 800;
-    text-decoration: underline;
+    transition: 0.5s ease;
+
+    
+    
 }
 
+
+
+
 .kgCarousel1 {
-    height: 548px;
+    height: 438.4px;
     width: auto;
 }
 
 .carousel-caption {
-    padding-top: 20px !important;
+    padding-top: 16px !important;
 }
+
+.kgContent {
+    transition: 0.5s ease;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+
+  .hover-underline-animation2 {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #992609;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #992609;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-underline-animation2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

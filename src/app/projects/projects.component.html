@@ -64,30 +64,94 @@
 
             </div>
 
+
             <div class="w-[50%] ">
-                <div class="flex justify-center demoScreenshots">
-                    <div (click)="kgShowVideo = true; kgShowCarousel = false;" class="mx-8" [ngClass]="{'selectedDSOption': kgShowVideo === true}">Demo Video</div>
-                    <div (click)="kgShowVideo = false; kgShowCarousel = true;" class="mx-8" [ngClass]="{'selectedDSOption': kgShowCarousel === true}">Screenshots</div>
+
+
+                <!-- <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                    <li [ngbNavItem]="1">
+                        <button ngbNavLink>One</button>
+                        <ng-template ngbNavContent>
+                            <div class="pt-8 flex justify-center">
+                                <iframe width="840" height="472.5" src="https://www.youtube.com/embed/Iw2rcweqeJo?si=m5EqZim4xfHvk1GT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2">
+                        <button ngbNavLink>Two</button>
+                        <ng-template ngbNavContent>
+                            <div *ngIf="kgShowCarousel" class="pt-8">
+                                <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper flex justify-center">
+                                            <img src="../../assets/images/kg_homepage.png" alt="KnightroGrade homepage" class="kgCarousel1" />
+                                        </div>
+                                        <div class="flex flex-col items-center pt-6">
+                                            <h3>Homepage</h3>
+                                            <-- <p>Featuring </p> 
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper flex justify-center">
+                                            <img src="../../assets/images/kg_courses.png" alt="Random second slide" class="kgCarousel1" />
+                                        </div>
+                                        <-- <div class="carousel-caption">
+                                            <h3>Second slide label</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div> --
+                                        <div class="flex flex-col items-center pt-6">
+                                            <h3>Courses Page</h3>
+                                            <!-- <p>Featuring </p> --
+                                        </div>
+                                    </ng-template>
+                                    <ng-template ngbSlide>
+                                        <div class="picsum-img-wrapper flex justify-center">
+                                            <img src="../../assets/images/kg_ide.png" alt="Random third slide" class="kgCarousel1" />
+                                        </div>
+                                        <div class="flex flex-col items-center pt-6">
+                                            <h3>Assignment IDE Page</h3>
+                                            <!-- <p>Featuring </p> --
+                                        </div>
+                                        <!-- <div class="carousel-caption"
+                                            <h3>Third slide label</h3>
+                                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                        </div> --
+                                    </ng-template>
+                                </ngb-carousel>
+                            </div>
+                        </ng-template>
+                    </li>
+                   
+                </ul> -->
+
+                <!-- <br><br><Br><br> -->
+
+                <div class="flex justify-center">
+                    <div (click)="kgShowVideo = true; kgShowCarousel = false;" class="mx-8 hover-underline-animation" [ngClass]="{'selectedDSOption hover-underline-animation2': kgShowVideo === true, 'demoScreenshots': kgShowVideo == false}">Demo Video</div>
+                    <div (click)="kgShowVideo = false; kgShowCarousel = true;" class="mx-8 hover-underline-animation" [ngClass]="{'selectedDSOption hover-underline-animation2': kgShowCarousel === true, 'demoScreenshots': kgShowCarousel == false}">Screenshots</div>
                 </div>
 
-                <div *ngIf="kgShowVideo" class="pt-8 flex justify-center">
-                    <iframe width="840" height="472.5" src="https://www.youtube.com/embed/Iw2rcweqeJo?si=m5EqZim4xfHvk1GT"
+                <div *ngIf="kgShowVideo" class="pt-8 flex justify-center kgContent" [@inOutAnimation]>
+                    <iframe width="672" height="378" src="https://www.youtube.com/embed/Iw2rcweqeJo?si=m5EqZim4xfHvk1GT"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
                 </div>
 
-                <div *ngIf="kgShowCarousel" class="pt-8">
-                    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true">
+                <div *ngIf="kgShowCarousel" class="pt-8 kgContent" [@inOutAnimation]>
+                    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
                         <ng-template ngbSlide>
                             <div class="picsum-img-wrapper flex justify-center">
                                 <img src="../../assets/images/kg_homepage.png" alt="KnightroGrade homepage" class="kgCarousel1" />
                             </div>
-                            <!-- <div class="carousel-caption">
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </div> -->
+                            <div class="flex flex-col items-center pt-6">
+                                <!-- <p>Featuring </p> -->
+                            </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <div class="picsum-img-wrapper flex justify-center">
@@ -97,10 +161,16 @@
                                 <h3>Second slide label</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div> -->
+                            <div class="flex flex-col items-center pt-6">
+                                <!-- <p>Featuring </p> -->
+                            </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <div class="picsum-img-wrapper flex justify-center">
                                 <img src="../../assets/images/kg_ide.png" alt="Random third slide" class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center pt-6">
+                                <!-- <p>Featuring </p> -->
                             </div>
                             <!-- <div class="carousel-caption">
                                 <h3>Third slide label</h3>

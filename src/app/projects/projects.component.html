@@ -69,7 +69,7 @@
 
 
             <!-- Right: Demo Video & Screenshot Carousel -->
-            <div class="w-[50%] ">
+            <div class="w-[50%] h-[438.4px]">
 
                 <!-- Options to switch between -->
                 <div class="flex justify-center">
@@ -164,22 +164,22 @@
 
                 <!-- Point 1 -->
                 <div class="flex items-center">
-                    <div class="pr-3" type="button" (click)="kgIsCollapsed1 = !kgIsCollapsed1; kgRotate(1)"
-                        [attr.aria-expanded]="!kgIsCollapsed1" aria-controls="collapseExample">
-                        <img class="arrowImg" [@rotateAnimation]='kgRotateState1' src="../../assets/images/arrow.png" />
+                    <div class="pr-3" type="button" (click)="cbIsCollapsed1 = !cbIsCollapsed1; cbRotate(1)"
+                        [attr.aria-expanded]="!cbIsCollapsed1" aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='cbRotateState1' src="../../assets/images/arrow.png" />
                     </div> Cross-Platform Web & Mobile App
                 </div>
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed1" class="subProjectPt ml-12">CerealBoxd is a breakfast-themed twist on LetterBoxd, a popular movie-rating social platform. We created this social application to be cross-platform with React and React Native.</div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="cbIsCollapsed1" class="subProjectPt ml-12">CerealBoxd is a breakfast-themed twist on LetterBoxd, a popular movie-rating social platform. We created this social application to be cross-platform with React and React Native.</div>
 
                 <!-- Point 2 -->
                 <div class="mt-6">
-                    <button class="pr-3" type="button" (click)="kgIsCollapsed2 = !kgIsCollapsed2; kgRotate(2)"
-                        [attr.aria-expanded]="!kgIsCollapsed2" aria-controls="collapseExample">
-                        <img class="arrowImg" [@rotateAnimation]='kgRotateState2' src="../../assets/images/arrow.png" />
+                    <button class="pr-3" type="button" (click)="cbIsCollapsed2 = !cbIsCollapsed2; cbRotate(2)"
+                        [attr.aria-expanded]="!cbIsCollapsed2" aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='cbRotateState2' src="../../assets/images/arrow.png" />
                     </button>
                     MERN Stack Project
                 </div>
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="kgIsCollapsed2" class=" subProjectPt ml-12">CerealBoxd was done with a MERN Stack - MongoDB, Express, React, and Node. I was present throughout all teams on this project, primarily focusing on Mobile Front-End.</div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="cbIsCollapsed2" class=" subProjectPt ml-12">CerealBoxd was done with a MERN Stack - MongoDB, Express, React, and Node. I was present throughout all teams on this project, primarily focusing on Mobile Front-End.</div>
 
                 <!-- Point 3 -->
                 <!-- <div class="mt-6"><button class="pr-3" type="button"
@@ -195,7 +195,7 @@
 
 
             <!-- Right: Demo Video & Screenshot Carousel -->
-            <div class="w-[50%] ">
+            <div class="w-[50%] h-[438.4px]">
 
                 <!-- Options to switch between -->
                 <div class="flex justify-center">
@@ -226,7 +226,7 @@
                 </div>
 
                 <!-- Screenshot Carousel -->
-                <div *ngIf="kgShowCarousel" class="pt-8 kgContent" [@inOutAnimation]>
+                <div *ngIf="cbShowCarousel" class="pt-8 kgContent" [@inOutAnimation]>
                     <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
                         <ng-template ngbSlide>
                             <div class="picsum-img-wrapper flex justify-center">
@@ -262,6 +262,197 @@
                                 <h3>Third slide label</h3>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div> -->
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Unwilling Chef Section -->
+    <div id="homeMain" class="mt-12 w-full pb-24">
+
+        <!-- Header -->
+        <div class="flex justify-center items-center">
+
+            <!-- Unwilling Chef Logo -->
+            <img class="projectHeaderImg mx-7" src="../../assets/images/unwilling_chef.png"
+                alt="logo for Unwilling Chef project" />
+
+            <!-- Title -->
+            <div id="gelfoHeader" class="text-center">
+                Unwilling Chef
+            </div>
+
+            <!-- Figma Logo -->
+            <img class="projectHeaderImg mx-7" src="../../assets/images/figma.png"
+                alt="Figma logo icon" />
+
+        </div>
+
+        <!-- Body -->
+        <div class="flex mt-14">
+
+            <!-- Left: Bullet Points and Collapsing Info -->
+            <div class="gelfoPts w-[50%] pl-24">
+
+                <!-- Point 1 -->
+                <div class="flex items-center">
+                    <div class="pr-3" type="button" (click)="ucIsCollapsed1 = !ucIsCollapsed1; ucRotate(1)"
+                        [attr.aria-expanded]="!ucIsCollapsed1" aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='ucRotateState1' src="../../assets/images/arrow.png" />
+                    </div> User-Centered Design Project
+                </div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="ucIsCollapsed1" class="subProjectPt ml-12">The Unwilling Chef was a project done for my Digital Media minor, in which our team spent the semester planning a large-scale, interactive prototype of an app of our choosing. Along the way, we completed numerous User-Centered Design staples, such as interaction analyses, think-aloud protocols, user surveys, etc.</div>
+
+                <!-- Point 2 -->
+                <div class="mt-6">
+                    <button class="pr-3" type="button" (click)="ucIsCollapsed2 = !ucIsCollapsed2; ucRotate(2)"
+                        [attr.aria-expanded]="!ucIsCollapsed2" aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='ucRotateState2' src="../../assets/images/arrow.png" />
+                    </button>
+                    Uniquely Targeted Meal Planning App
+                </div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="ucIsCollapsed2" class=" subProjectPt ml-12">We planned for our app to specifically target those who have trouble meal planning; if they have ADHD or depression, for instance, or are just new to the whole process. This heavily impacted our design, for instance inspiring the inclusion of a interactive "mascot" to take care of by successfully following your meal plan.</div>
+
+                <!-- Point 3 -->
+                <div class="mt-6"><button class="pr-3" type="button"
+                        (click)="ucIsCollapsed3 = !ucIsCollapsed3; ucRotate(3)" [attr.aria-expanded]="!kgIsCollapsed1"
+                        aria-controls="collapseExample">
+                        <img class="arrowImg" [@rotateAnimation]='ucRotateState3' src="../../assets/images/arrow.png" />
+                    </button> Figma Prototype in Action</div>
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="ucIsCollapsed3" class="subProjectPt ml-12">Our final deliverable was a heavily interactable Figma prototype. The video linked to the right shows it in action!</div>
+            </div>
+
+
+            <!-- Right: Demo Video & Screenshot Carousel -->
+            <div class="w-[50%]  h-[600.4px]">
+
+                <!-- Options to switch between -->
+                <div class="flex justify-center">
+                    <div (click)="ucShowVideo = true; ucShowCarousel = false" class="mx-8 hover-underline-animation"
+                        [ngClass]="{'selectedDSOption hover-underline-animation2': ucShowVideo === true, 'demoScreenshots': ucShowVideo == false}">
+                        Demo Video</div>
+                    <div (click)="ucShowCarousel = true; ucShowVideo = false" class="mx-8 hover-underline-animation"
+                        [ngClass]="{'selectedDSOption hover-underline-animation2': ucShowCarousel === true, 'demoScreenshots':  ucShowCarousel == false}">
+                        User-Centered Design Process</div>
+                </div>
+
+                <!-- Demo Video -->
+                <div *ngIf="ucShowVideo" class="pt-8 flex justify-center kgContent" [@inOutAnimation]>
+                    <iframe width="672" height="378" src="https://www.youtube.com/embed/w6HN_G49C_4?si=yOG-OMDkHPP3_jvq"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+
+                
+
+                <!-- Screenshot Carousel -->
+                <div *ngIf="ucShowCarousel" class="pt-8 kgContent" [@inOutAnimation]>
+                    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">                        
+        
+                        <!-- Use Case Comic -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_5_use_case.PNG" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Use Case Diagram</h3>
+                                <p>Developed this comic to show how & why prospective users would go on our app</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Navigation -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_6_nav.png" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Navigation</h3>
+                                <p>Represents how users can navigate our app, in mind-map format</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Navigation Wireflow -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_6_nav_wireflow.png" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Navigation Wireflow</h3>
+                                <p>Planned out how users will navigate our app in visual, chronological format</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Extra Design - Simple -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_9_simple.png" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center pt-6">
+                                <!-- <p>Featuring </p> -->
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Extra Design: Simple</h3>
+                                <p>Developed an alternative, simpler design in case of negative user feedback</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Extra Design - Wild -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_9_extreme.png" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Extra Design: Wild</h3>
+                                <p>Developed an alternative, wilder design in case of negative user feedback</p>
+                            </div>
+                        </ng-template>
+
+
+                        <!-- Design Language -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_9_design_lang.PNG" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Design Language</h3>
+                                <p>Put together a design language to ensure consistency across screens and members</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Interaction Analysis -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_5_interaction_analysis.PNG" alt="Random third slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Interaction Analysis</h3>
+                                <p>Mapped out how users will interact with our app using swimlanes</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- User Surveys -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/uc_4_survey.PNG" alt="Random second slide"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>User Surveys</h3>
+                                <p>Conducted user surveys to determine our audience and what features are most desired</p>
+                            </div>
                         </ng-template>
                     </ngb-carousel>
                 </div>

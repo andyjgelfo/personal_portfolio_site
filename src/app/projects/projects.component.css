@@ -251,3 +251,7 @@
     height: 16px;
     width: auto;
   }
+
+  .carouselCaption {
+    font-family: 'Recursive', sans-serif;
+  }

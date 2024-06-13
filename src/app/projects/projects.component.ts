@@ -47,29 +47,39 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 export class ProjectsComponent {
 
+    //Collapse vars
     kgIsCollapsed1 = false;
-    kgIsCollapsed2 = true;
-    kgIsCollapsed3 = true;
+    kgIsCollapsed2 = false;
+    kgIsCollapsed3 = false;
+    cbIsCollapsed1 =  false;
+    cbIsCollapsed2 =  false;
+    ucIsCollapsed1 = false;    
+    ucIsCollapsed2 = false;    
+    ucIsCollapsed3 = false;    
 
+    //Show vars
     kgShowVideo = true;
     kgShowCarousel = false;
-    active = 1;
-
-    state: string = 'default';
-
-    kgRotateState1: string = 'rotated';
-    kgRotateState2: string = 'default';
-    kgRotateState3: string = 'default';
-
     cbShowVideoWeb = true;
     cbShowVideoMobile = false;
     cbShowCarousel =  false;
+    ucShowVideo = true;
+    ucShowCarousel = false;
+    active = 1;
 
 
-    rotate() {
-        this.state = (this.state === 'default' ? 'rotated' : 'default');
-    }
+    //Rotate vars
+    kgRotateState1: string = 'rotated';
+    kgRotateState2: string = 'rotated';
+    kgRotateState3: string = 'rotated';
+    cbRotateState1: string = 'rotated';
+    cbRotateState2: string = 'rotated';
+    ucRotateState1: string = 'rotated';
+    ucRotateState2: string = 'rotated';
+    ucRotateState3: string = 'rotated';
 
+    
+    //Rotate function for KnightroGrade
     kgRotate(num: number) {
 
         console.log(num);
@@ -89,14 +99,44 @@ export class ProjectsComponent {
         }
     }
 
+    //Rotate function for CerealBoxd
+    cbRotate(num: number) {
 
-    kgRotate2() {
-        this.state = (this.state === 'default' ? 'rotated' : 'default');
+        console.log(num);
+
+        switch(num) {
+            case 1:
+                this.cbRotateState1 = (this.cbRotateState1 === 'default' ? 'rotated' : 'default');
+                break;
+            case 2:
+                this.cbRotateState2 = (this.cbRotateState2 === 'default' ? 'rotated' : 'default');
+                break;
+            default:
+                break;
+        }
     }
 
-    kgRotate3() {
-        this.state = (this.state === 'default' ? 'rotated' : 'default');
+    //Rotate function for Unwilling Chef
+    ucRotate(num: number) {
+
+        console.log(num);
+
+        switch(num) {
+            case 1:
+                this.ucRotateState1 = (this.ucRotateState1 === 'default' ? 'rotated' : 'default');
+                break;
+            case 2:
+                this.ucRotateState2 = (this.ucRotateState2 === 'default' ? 'rotated' : 'default');
+                break;
+            case 3:
+                this.ucRotateState3 = (this.ucRotateState3 === 'default' ? 'rotated' : 'default');
+                break;
+            default:
+                break;
+        }
     }
+
+
 
 
 

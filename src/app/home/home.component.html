@@ -123,29 +123,39 @@
                         <img class="iconPicture mx-24" src="../../assets/images/linkedin_icon.png"
                             alt="3D Icon of the LinkedIn Logo" />
                     </a>
-                    <a href="https://www.linkedin.com/in/andy-gelfo/" target="_blank" class="threeDimensionalText mt-2">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/andy-gelfo/" target="_blank"
+                        class="threeDimensionalText mt-2">LinkedIn</a>
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <img class="iconPicture mx-24" src="../../assets/images/resume_icon.png"
-                        alt="3D Icon of a Resume" />
-                    <div class="threeDimensionalText mt-2">Resume</div>
+                    <a target="_blank"
+                        href="https://www.linkedin.com/in/andy-gelfo/overlay/1717031567398/single-media-viewer/?profileId=ACoAADhV4_YBI8KkTG9rlETHOZkQnTF92SVk1Z8">
+                        <img class="iconPicture mx-24" src="../../assets/images/resume_icon.png"
+                            alt="3D Icon of a Resume" />
+                    </a>
+                    <a target="_blank"
+                        href="https://www.linkedin.com/in/andy-gelfo/overlay/1717031567398/single-media-viewer/?profileId=ACoAADhV4_YBI8KkTG9rlETHOZkQnTF92SVk1Z8"
+                        class="threeDimensionalText mt-2">Resume</a>
                 </div>
             </div>
 
             <div class="flex justify-center mt-12">
                 <div class="flex flex-col items-center">
 
-                    <img class="iconPicture mx-24" src="../../assets/images/email_icon.png"
-                        alt="3D Icon of an E-Mail Envelope" />
-                    <div class="threeDimensionalText mt-2">E-Mail</div>
+                    <a href="mailto:andyjgelfo@gmail.com" target="_blank">
+                        <img class="iconPicture mx-24" src="../../assets/images/email_icon.png"
+                            alt="3D Icon of an E-Mail Envelope" />
+                    </a>
+                    <a href="mailto:andyjgelfo@gmail.com" target="_blank" class="threeDimensionalText mt-2">E-Mail</a>
                 </div>
 
                 <div class="flex flex-col items-center">
 
-                    <img class="iconPicture mx-24" src="../../assets/images/github_icon.png"
-                        alt="3D Icon of the GitHub Logo" />
-                    <div class="threeDimensionalText mt-2">GitHub</div>
+                    <a href="https://github.com/andyjgelfo" target="_blank">
+                        <img class="iconPicture mx-24" src="../../assets/images/github_icon.png"
+                            alt="3D Icon of the GitHub Logo" />
+                    </a>
+                    <a href="https://github.com/andyjgelfo" target="_blank" class="threeDimensionalText mt-2">GitHub</a>
                 </div>
             </div>
 
@@ -158,7 +168,7 @@
 
     <div class="footerBase flex justify-around">
         <a class="footerLinks invisible">Projects -&gt;</a>
-        <a href="#homeBody" class="footerLinks">Back to Top</a>
-        <div class="footerLinks">Projects -&gt;</div>
+        <a [routerLink]="['/home']" fragment="homeBody" class="footerLinks">Back to Top</a>
+        <a href="/projects" class="footerLinks">Projects -&gt;</a>
     </div>
 </div>

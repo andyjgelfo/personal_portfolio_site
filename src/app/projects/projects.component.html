@@ -1,4 +1,4 @@
-<div id="homeBody">
+<div id="projBody">
 
     <!-- Navbar -->
     <app-navbar></app-navbar>
@@ -271,7 +271,7 @@
 
 
     <!-- Unwilling Chef Section -->
-    <div id="homeMain" class="mt-12 w-full pb-24">
+    <div id="homeMain" class="mt-12 w-full pb-6">
 
         <!-- Header -->
         <div class="flex justify-center items-center">
@@ -460,11 +460,171 @@
         </div>
     </div>
 
+    <!-- More Projects Section -->
+    <div id="homeMain" class="w-full pb-24">
+
+        <!-- Header -->
+        <div class="flex justify-center items-center">
+
+            <!-- Unwilling Chef Logo -->
+            <!-- <img class="projectHeaderImg mx-7" src="../../assets/images/unwilling_chef.png"
+                alt="logo for Unwilling Chef project" /> -->
+
+            <!-- Title -->
+            <div id="gelfoHeader" class="text-center">
+                More Projects...
+            </div>
+
+            <!-- Figma Logo -->
+            <!-- <img class="projectHeaderImg mx-7" src="../../assets/images/figma.png"
+                alt="Figma logo icon" /> -->
+
+        </div>
+
+        <!-- Body -->
+        <div class="flex justify-center mt-10">
+            <div class="h-[600.4px]">
+
+                <!-- Screenshot Carousel -->
+                <div class=" kgContent" [@inOutAnimation]>
+                    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">                        
+        
+                        <!-- Pair-a-Dice 1 -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/pairadice_1.PNG" alt="Pair-a-Dice Contact Manager Homepage"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Pair-a-Dice Contact Manager (1)</h3>
+                                <p>LAMP Stack Project - Casino Themed Contact Manager</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Pair-a-Dice 2 -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/pairadice_2.PNG" alt="Pair-a-Dice Management Page"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Pair-a-Dice Contact Manager (2)</h3>
+                                <p>LAMP Stack Project - Casino Themed Contact Manager</p>
+
+                            </div>
+                        </ng-template>
+
+                        <!-- Petey's 1 -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/peteys_1.PNG" alt="Petey's Pizza Panic Screenshot 1"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Petey's Pizza Panic (1)</h3>
+                                <p>Unity-Created (C#) 3D Pizza-Themed Platformer</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Petey's 2 -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/peteys_2.PNG" alt="Petey's Pizza Panic Screenshot 2"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Petey's Pizza Panic (2)</h3>
+                                <p>Unity-Created (C#) 3D Pizza-Themed Platformer</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Petey's 3 -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/peteys_3.PNG" alt="Petey's Pizza Panic Screenshot 3"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Petey's Pizza Panic (3)</h3>
+                                <p>Unity-Created (C#) 3D Pizza-Themed Platformer</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- 3D Island Render -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/model_render.png" alt="Island Scenery 3D Renders"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>3D Island Render</h3>
+                                <p>Created 3D Models in Maya From Scratch for an Island Scene</p>
+                            </div>
+                        </ng-template>
+
+
+                        <!-- Ink Story 1 -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/dig2500_ink_1.png" alt="Star Wars themed Ink game"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Star Wars Ink Story (1)</h3>
+                                <p>Interactive Text Game Made with Ink</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Ink Story 2 -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/dig2500_ink_2.png" alt="Code for Star Wars themed Ink game"
+                                    class="kgCarousel1" />
+                            </div>
+                            
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Star Wars Ink Story (2)</h3>
+                                <p>Interactive Text Game Made with Ink</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Composite Image -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/dig2109_lego.jpg" alt="Lego Composite Image"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Composite Images</h3>
+                                <p>PhotoShop-Created Composite Images</p>
+                            </div>
+                        </ng-template>
+
+                        <!-- Klonoa Pop Art -->
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper flex justify-center">
+                                <img src="../../assets/images/dig2109_klonoa.jpg" alt="Pop Art Poster for Klonoa"
+                                    class="kgCarousel1" />
+                            </div>
+                            <div class="flex flex-col items-center carouselCaption pt-6">
+                                <h3>Pop-Art Poster</h3>
+                                <p>Illustrator-Created Pop Art Poster of Klonoa</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
 
     <!-- Footer -->
-    <!-- <div class="footerBase flex justify-around">
-        <a class="footerLinks invisible">Projects -&gt;</a>
-        <a href="#homeBody" class="footerLinks">Back to Top</a>
-        <div class="footerLinks">Projects -&gt;</div>
-    </div> -->
+    <div class="footerBase flex justify-around">
+        <a href="/home" class="footerLinks">&lt;- Home</a>
+        <a [routerLink]="['/projects']" fragment="projBody" class="footerLinks">Back to Top</a>
+        <div class="footerLinks invisible">&lt;- Home</div>
+    </div>
 </div>

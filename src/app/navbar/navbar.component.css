@@ -38,3 +38,7 @@
     color: #FB5A32;
     cursor: pointer;
 }
+
+.selectedLink {
+    color: #FB5A32;
+}

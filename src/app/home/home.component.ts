@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { ActivatedRoute } from '@angular/router';
+
 
 // @ts-ignore
 import Typewriter from 't-writer.js';
@@ -11,9 +13,17 @@ import Typewriter from 't-writer.js';
 })
 export class HomeComponent {
 
-  constructor() {}
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+
+    this.route.fragment.subscribe(fragment => {
+      const element = document.querySelector(`#${fragment}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+    
     const target = document.querySelector('.tw');
 
     const writer = new Typewriter(target, {

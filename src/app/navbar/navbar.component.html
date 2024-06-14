@@ -1,5 +1,4 @@
 <div class="navbarBase flex">
-    <div id="navbarTitle">Andy Gelfo</div>
-    <a href="/projects" class="navbarLinks">Projects</a>
-    <div class="navbarLinks">Professional Experience</div>
+    <a href="/home" id="navbarTitle">Andy Gelfo</a>
+    <a href="/projects" class="navbarLinks" [ngClass]="{'selectedLink': this.href.includes('projects')}">Projects</a>
 </div>

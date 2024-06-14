@@ -1,4 +1,4 @@
 <div class="navbarBase flex">
-    <a href="/home" id="navbarTitle">Andy Gelfo</a>
-    <a href="/projects" class="navbarLinks" [ngClass]="{'selectedLink': this.href.includes('projects')}">Projects</a>
+    <a [routerLink]="['/home']" id="navbarTitle">Andy Gelfo</a>
+    <a [routerLink]="['/projects']" class="navbarLinks" [ngClass]="{'selectedLink': this.href.includes('projects')}">Projects</a>
 </div>
